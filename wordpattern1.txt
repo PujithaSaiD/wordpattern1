@@ -1,0 +1,13 @@
+n=int(input())
+l=[]
+for i in range(n):
+  s=int(input())
+  l.append(s)
+for i in l:
+  for j in range(i):
+    for k in range(i):
+      if((j+k)%2==0):
+        print("w",end="")
+      else:
+        print("b",end="")
+    print()
